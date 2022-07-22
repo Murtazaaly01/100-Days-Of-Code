@@ -6,9 +6,6 @@ def run(player):
 def ouch(player):
     pass
 
-if i>0:
-    pass
-
 while i > 6:
     pass
 print("Ayush is good boy")

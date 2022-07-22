@@ -4,10 +4,7 @@ def isBinod(filename):
     with open(filename , 'r') as f:
         fileContent = f.read()
         #Detect all forms of binod
-    if "binod" in fileContent.lower():
-        return True
-    else:
-        return False        
+    return "binod" in fileContent.lower()        
 
     
 
@@ -22,8 +19,7 @@ if __name__ == "__main__":
         if items.endswith('txt'):
             print(f'Detecting Binod in {items}')
 
-            flag = isBinod(items)
-            if(flag):
+            if flag := isBinod(items):
                 print(f"Binod Found In {items}")
                 nBinod += 1
             else:

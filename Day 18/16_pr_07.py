@@ -3,17 +3,11 @@ class Vector:
         self.vec = vec
 
     def __str__(self):
-        str1 = ''
-        index = 0
-        for i in (self.vec):
-            str1 += f' {i} a{index} +'
-            index +=1
+        str1 = ''.join(f' {i} a{index} +' for index, i in enumerate(self.vec))
         return str1[:-1]
 
     def __add__(self, vec2):
-        newList = []
-        for i in range(len(self.vec)):
-            newList.append(self.vec[i]+vec2.vec[i])
+        newList = [self.vec[i]+vec2.vec[i] for i in range(len(self.vec))]
         return Vector(newList)
 
     def __mul__(self, vec2):

@@ -1,6 +1,6 @@
 class Sample:
-    def __init__(slf, name):
-        slf.name = name
+    def __init__(self, name):
+        self.name = name
 obj = Sample('Ayush')
 # Sample.a = "Raju" ---> to change class
 

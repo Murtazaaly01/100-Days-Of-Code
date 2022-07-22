@@ -14,7 +14,7 @@ print(mydict)
 updatedict = {
     'love' : 'you'
 }
-mydict.update(updatedict) #Update the dictionary by adding key-values pairs from updatedict
+mydict |= updatedict
 print(mydict)
 
 print(mydict.get('ayush')) #Prints value associated with ayush

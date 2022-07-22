@@ -11,5 +11,5 @@ b = [i for i in a if i%2==0]
 print(b)
 
 t = [1, 4, 5, 8, 0, 2, 2]
-s = {i for i in t}
+s = set(t)
 print(s)

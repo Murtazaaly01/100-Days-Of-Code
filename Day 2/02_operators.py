@@ -7,9 +7,7 @@ print("The Value Of 2+5 is", 2-5)
 print("The Value Of 2+5 is", 2*5)
 print("The Value Of 2+5 is", 2/5)
 
-# Assignment Operators
-a = 34
-a += 2
+a = 34 + 2
 a *= 2
 a /= 2
 print(a)

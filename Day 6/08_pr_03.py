@@ -1,14 +1,10 @@
 text = input("Enter The Text: ")
-if("make a lot of money" in text):
-    spam = True
-elif("buy now" in text):
-    spam = True   
-elif("click this" in text):
-    spam = True   
-elif("subscribe this" in text):
-    spam = True   
-else:
-    spam = False
+spam = (
+    ("make a lot of money" in text)
+    or "buy now" in text
+    or "click this" in text
+    or "subscribe this" in text
+)
 
 if(spam):
     print("This Text Is spam")    

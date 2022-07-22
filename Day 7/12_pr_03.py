@@ -1,5 +1,3 @@
 num = int(input("Enter Your Number\n"))
-i = 0
-while i<=10:
+for i in range(11):
     print(f"{num}X{i}={num*i}")
-    i = i+1

@@ -5,7 +5,7 @@ class Library:
     def displayAvailableBooks(self):
         print("Books present in this library are: ")
         for book in self.books:
-            print(" *" + book)
+            print(f" *{book}")
 
     def borrowBook(self, bookName):
         if bookName in self.books:
@@ -35,15 +35,15 @@ class Student:
 if __name__ == "__main__":
     centraLibrary = Library(["Algorithms", "Django", "Clrs", "Python Notes"])
     student = Student()
-    # centraLibrary.displayAvailableBooks()
-    while(True):
-        welcomeMsg = '''\n ====== Welcome to Central Library ======
+    welcomeMsg = '''\n ====== Welcome to Central Library ======
         Please choose an option:
         1. List all the books
         2. Request a book
         3. Add/Return a book
         4. Exit the Library
         '''
+    # centraLibrary.displayAvailableBooks()
+    while True:
         print(welcomeMsg)
         a = int(input("Enter a choice: "))
         if a == 1:

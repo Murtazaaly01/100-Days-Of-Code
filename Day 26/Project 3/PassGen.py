@@ -8,8 +8,7 @@ data4 = string.punctuation
 
 try:
     passwd = int(input("Enter Length Of Your Passsword: "))
-    pwd = []
-    pwd.extend(list(data1))
+    pwd = list(list(data1))
     pwd.extend(list(data2))
     pwd.extend(list(data3))
     pwd.extend(list(data4))
